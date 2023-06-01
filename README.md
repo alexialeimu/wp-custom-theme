@@ -1,5 +1,7 @@
 # Custom Wordpress Theme
 
+A custom Wordpress theme built from scratch
+
 ## Technologies used:
 
 -   WordPress
