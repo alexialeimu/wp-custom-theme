@@ -22,8 +22,8 @@ get_header(); ?>
         <div class="parallax-window w-100 h-screen" data-parallax="scroll" data-image-src='<?php echo $bg_image_url; ?>'>
             <div class="dark-overlay absolute bg-slate-700 opacity-50 w-screen h-[calc(100vh+5rem)] -translate-y-20">
             </div>
-            <div class="container mx-auto right-0 z-20">
-                <div class="text-white absolute top-1/3 w-full text-center left-0 md:left-auto md:text-left">
+            <div class="container mx-auto z-20">
+                <div class="text-white absolute top-1/3 left-0 right-0 text-center">
                     <h1 class="text-4xl md:text-6xl font-bold"><?php echo get_theme_mod(
                         'theme_frontpage_title'
                     ); ?></h1>
