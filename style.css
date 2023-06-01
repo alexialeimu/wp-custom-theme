@@ -1133,6 +1133,11 @@ input[type=submit]:hover {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-slate-950 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(2 6 23 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-transparent {
   background-color: transparent !important;
 }
@@ -1271,6 +1276,11 @@ input[type=submit]:hover {
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
 }
 
+.text-gray-400 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(156 163 175 / var(--tw-text-opacity)) !important;
+}
+
 .text-gray-700 {
   --tw-text-opacity: 1 !important;
   color: rgb(55 65 81 / var(--tw-text-opacity)) !important;
@@ -1304,6 +1314,16 @@ input[type=submit]:hover {
 .text-white {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(107 114 128 / var(--tw-text-opacity)) !important;
+}
+
+.text-slate-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(100 116 139 / var(--tw-text-opacity)) !important;
 }
 
 .opacity-50 {
@@ -1392,10 +1412,6 @@ input[type=submit]:hover {
     position: absolute !important;
   }
 
-  .md\:left-auto {
-    left: auto !important;
-  }
-
   .md\:right-0 {
     right: 0px !important;
   }
@@ -1482,10 +1498,6 @@ input[type=submit]:hover {
 
   .md\:pt-8 {
     padding-top: 2rem !important;
-  }
-
-  .md\:text-left {
-    text-align: left !important;
   }
 
   .md\:text-3xl {

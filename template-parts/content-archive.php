@@ -19,11 +19,11 @@
                     ); ?>
                     <img src="<?php echo esc_url(
                         $image_url
-                    ); ?>" alt="Reference Image">
+                    ); ?>" alt="Winter scenery">
                 <?php endif; ?>
             </div>
             <h3 class="mt-3 text-xl font-bold"><?php the_title(); ?></h3>
-            <div class="text-slate-400 mt-6 text-xs uppercase tracking-wider">
+            <div class="text-slate-500 mt-6 text-xs uppercase tracking-wider">
                 <?php echo get_the_date('d.m.Y'); ?>
                     |
                     <?php

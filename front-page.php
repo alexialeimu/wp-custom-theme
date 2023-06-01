@@ -7,7 +7,7 @@ get_header(); ?>
     <!-- 
         HERO IMAGE
     -->
-    <section id="hero" class="bg-slate-950">
+    <section id="hero">
         <?php
         $bg_image_url = '';
         $background_image = get_theme_mod('theme_background_image');
