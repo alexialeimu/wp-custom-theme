@@ -7,7 +7,7 @@ get_header(); ?>
     <!-- 
         HERO IMAGE
     -->
-    <section id="hero">
+    <section id="hero" class="bg-slate-950">
         <?php
         $bg_image_url = '';
         $background_image = get_theme_mod('theme_background_image');
@@ -29,7 +29,7 @@ get_header(); ?>
                     ); ?></h1>
                 </div>
                 <div class="absolute bottom-20 left-0 right-0 text-white scroll-arrow">
-                    <a href="#about"><span></span></a>
+                    <a href="#about" aria-label="Skip to next section"><span></span></a>
                 </div>
             </div>
         </div>

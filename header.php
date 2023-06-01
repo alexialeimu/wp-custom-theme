@@ -35,7 +35,9 @@
 
                             <a href="<?php echo esc_url(
                                 $base_url
-                            ); ?>" tabindex="0"><img src=<?php echo $logo[0]; ?> class="max-h-8"></img></a>
+                            ); ?>" tabindex="0"><img src=<?php echo $logo[0]; ?> class="max-h-8" alt="<?php bloginfo(
+     'name'
+ ); ?>"></img></a>
                     <?php
                     } ?>
                     <?php wp_nav_menu([
@@ -43,14 +45,14 @@
                         'container' => '',
                         'theme_location' => 'primary',
                         'items_wrap' =>
-                            '<ul id="" class="nav-items hidden md:flex flex-column space-x-8">%3$s</ul>',
+                            '<ul id="" class="nav-items hidden md:flex flex-column space-x-8 font-bold">%3$s</ul>',
                     ]); ?>
                     <!-- Hamburger Icon -->
-                    <button id="menu-btn" class="block hamburger cursor-pointer w-6 h-6 md:hidden focus:outline-none self-end">
+                    <a id="menu-btn" class="block hamburger cursor-pointer w-6 h-6 md:hidden focus:outline-none self-end">
                         <span class="hamburger-top absolute top-0 left-0 w-6 h-0.5 bg-white"></span>
                         <span class="hamburger-middle absolute top-0 left-0 w-6 h-0.5 bg-white"></span>
                         <span class="hamburger-bottom absolute top-0 left-0 w-6 h-0.5 bg-white"></span>
-                    </button>
+                    </a>
                 </div>
 
                 <!-- Mobile Menu -->

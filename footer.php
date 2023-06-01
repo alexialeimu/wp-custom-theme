@@ -18,7 +18,9 @@
                             $custom_logo_id
                         );
                         ?>
-                            <img src=<?php echo $logo[0]; ?> class="max-h-8"></img>
+                            <img src=<?php echo $logo[0]; ?> class="max-h-8" alt="<?php bloginfo(
+     'name'
+ ); ?>"></img>
                     <?php
                     } ?>
                     <?php wp_nav_menu([

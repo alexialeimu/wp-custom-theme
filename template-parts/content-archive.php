@@ -2,7 +2,7 @@
     <div class="w-full h-full">
         <a href="<?php echo esc_url(
             get_permalink()
-        ); ?>" class="absolute w-full h-full top-0 left-0 z-10"></a>
+        ); ?>" class="absolute w-full h-full top-0 left-0 z-10" aria-label="Open '<?php the_title(); ?>'"></a>
         <div class="w-100 h-100">
             <div class="h-42 overflow-hidden">
                 <?php if (has_post_thumbnail()): ?>
