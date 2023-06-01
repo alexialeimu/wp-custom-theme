@@ -29,7 +29,7 @@
                     <?php
                     $categories = get_the_category();
                     if (!empty($categories)) {
-                        $category_name = $categories[0]->name; // Assuming you want the first category name
+                        $category_name = $categories[0]->name;
                         echo $category_name;
                     }
                     ?>

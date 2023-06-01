@@ -20,14 +20,12 @@
         $tags = get_the_tags();
 
         if ($tags) {
-            // Check if there are tags
-            echo '<div class="tag-list pt-8 space-x-4">'; // Start a container for the tags
+            echo '<div class="tag-list pt-8 space-x-4">';
 
             foreach ($tags as $tag) {
-                $tag_link = get_tag_link($tag->term_id); // Get the tag's permalink
-                $tag_name = $tag->name; // Get the tag's name
+                $tag_link = get_tag_link($tag->term_id);
+                $tag_name = $tag->name;
 
-                // Output the tag with a custom CSS class
                 echo '<div class="text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 rounded-full bg-white text-gray-700 border"><a href="' .
                     esc_url($tag_link) .
                     '" class="custom-tag-class">' .
