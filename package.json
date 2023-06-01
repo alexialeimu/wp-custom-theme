@@ -1,0 +1,14 @@
+{
+  "name": "wp-custom-theme",
+  "version": "1.0.0",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.19.5",
+    "prettier": "^2.8.8",
+    "tailwindcss": "^3.3.2"
+  }
+}

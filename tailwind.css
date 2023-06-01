@@ -1,0 +1,208 @@
+/*!
+Theme Name: WordPress + Tailwind
+Version: 1.0
+*/
+
+/* The WordPress theme file header goes here. */
+
+@tailwind base;
+
+/* All of the existing CSS goes here. */
+/* Hamburger menu */
+.hamburger {
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    transform: rotate(0);
+    transition: all 0.5s;
+
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* aos effect page */
+/* todo: tyylitä! */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* p {
+    font-size: 14px;
+} */
+
+.text-serif {
+    font-family: 'Baskervville', serif;
+}
+
+.skip-to-content-link {
+    background: black;
+    color: white;
+    height: 40px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-to-content-link:focus {
+    transform: translateY(0%);
+}
+
+.nav-items a:hover {
+    border-bottom: 2px solid white;
+}
+
+.hero-bg-image {
+    background-image: url('./assets/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#section02 a {
+    padding-top: 60px;
+}
+
+.scroll-arrow a:hover {
+    opacity: .5;
+}
+
+.scroll-arrow a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+.scroll-arrow a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+#reference .reference-card {
+    z-index: 10;
+}
+
+#reference::after {
+    content: '';
+    background: white;
+    height: 180px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.blog-card img {
+    transition: transform .4s ease-in-out;
+}
+
+.blog-card:hover img {
+    transform: scale(1.05)
+}
+
+.blog-card:hover h3 {
+    color: #9ca3af
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#contact-us .wpforms-container .wpforms-field {
+  padding: 10px 0;
+  position: relative;
+}
+
+@tailwind components;
+@tailwind utilities;
