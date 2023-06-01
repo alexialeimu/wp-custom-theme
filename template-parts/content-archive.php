@@ -15,7 +15,7 @@
                     ); ?>" alt="" />
                 <?php else: ?>
                     <?php $image_url = get_theme_file_uri(
-                        'assets/images/reference.jpeg'
+                        'assets/images/background.jpeg'
                     ); ?>
                     <img src="<?php echo esc_url(
                         $image_url
