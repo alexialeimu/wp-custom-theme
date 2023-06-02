@@ -16,3 +16,5 @@ npx tailwindcss -i ./tailwind.css -o ./style.css --watch
 ```
 
 It generates `style.css` file using `tailwind.css` as the input file.
+
+<img src="./assets/images/screenshot.png" width="600">
