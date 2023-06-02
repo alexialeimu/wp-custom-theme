@@ -1133,11 +1133,6 @@ input[type=submit]:hover {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-slate-950 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(2 6 23 / var(--tw-bg-opacity)) !important;
-}
-
 .bg-transparent {
   background-color: transparent !important;
 }
@@ -1276,11 +1271,6 @@ input[type=submit]:hover {
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
 }
 
-.text-gray-400 {
-  --tw-text-opacity: 1 !important;
-  color: rgb(156 163 175 / var(--tw-text-opacity)) !important;
-}
-
 .text-gray-700 {
   --tw-text-opacity: 1 !important;
   color: rgb(55 65 81 / var(--tw-text-opacity)) !important;
@@ -1311,19 +1301,14 @@ input[type=submit]:hover {
   color: rgb(148 163 184 / var(--tw-text-opacity)) !important;
 }
 
-.text-white {
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1 !important;
-  color: rgb(107 114 128 / var(--tw-text-opacity)) !important;
-}
-
 .text-slate-500 {
   --tw-text-opacity: 1 !important;
   color: rgb(100 116 139 / var(--tw-text-opacity)) !important;
+}
+
+.text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .opacity-50 {
@@ -1381,10 +1366,40 @@ input[type=submit]:hover {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity)) !important;
 }
 
+.before\:bg-gray-50::before {
+  content: var(--tw-content) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity)) !important;
+}
+
 .before\:bg-white::before {
   content: var(--tw-content) !important;
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.before\:bg-red-100::before {
+  content: var(--tw-content) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity)) !important;
+}
+
+.before\:bg-gray-100::before {
+  content: var(--tw-content) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity)) !important;
+}
+
+.before\:bg-slate-100::before {
+  content: var(--tw-content) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity)) !important;
+}
+
+.before\:bg-\[\#F0F0F4\]::before {
+  content: var(--tw-content) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(240 240 244 / var(--tw-bg-opacity)) !important;
 }
 
 .hover\:text-gray-400:hover {

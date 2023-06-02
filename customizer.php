@@ -131,12 +131,37 @@ function theme_customize_register($wp_customize)
     ]);
 
     /**
+     * Contact us Section
+     */
+    $wp_customize->add_section('theme_contact_us', [
+        'title' => __('Frontpage – Contact us', 'theme'),
+        'description' => __(
+            'Change shortlink of the Contact Us form',
+            'theme'
+        ),
+        'priority' => 55,
+    ]);
+    $wp_customize->add_setting('theme_contact_us_link', [
+        'default' => '',
+        'sanitize_callback' => 'sanitize_textarea_field',
+    ]);
+    $wp_customize->add_control('theme_contact_us_link_control', [
+        'label' => __(
+            'Paste the shortlink of the form here',
+            'theme'
+        ),
+        'section' => 'theme_contact_us',
+        'settings' => 'theme_contact_us_link',
+        'type' => 'textarea',
+    ]);
+
+    /**
      * Footer
      */
     $wp_customize->add_section('theme_footer', [
         'title' => __('Footer', 'theme'),
         'description' => __('Customize footer', 'theme'),
-        'priority' => 55,
+        'priority' => 57,
     ]);
 
     // Copyright-teksti

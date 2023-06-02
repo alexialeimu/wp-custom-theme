@@ -31,14 +31,17 @@
                             $custom_logo_id
                         );
                         ?>
-                        <?php $base_url = home_url(); ?>
+                        <?php
+                        $base_url = home_url();
 
+                        if ($logo): ?>
                             <a href="<?php echo esc_url(
                                 $base_url
                             ); ?>" tabindex="0"><img src=<?php echo $logo[0]; ?> class="max-h-8" alt="<?php bloginfo(
      'name'
  ); ?>"></img></a>
-                    <?php
+ <?php endif;
+
                     } ?>
                     <?php wp_nav_menu([
                         'menu' => 'primary',

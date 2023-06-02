@@ -196,16 +196,20 @@ get_header(); ?>
         </section>
     <?php endif; ?>
 
+    <?php /**
+     * Get form short code and add it via Customizer
+     */
+    $form_code = get_theme_mod('theme_contact_us_link'); ?>
+    <?php if ($form_code): ?>
     <section id="contact-us" class="pt-16 pb-8 bg-gray-300">
         <div class="container mx-auto text-center" data-aos="fade-up">
             <h2 class="text-3xl md:text-4xl font-bold mb-8">Contact us</h2>
             <div class="px-8 md:px-0 md:w-1/2 mx-auto">
-                <?php echo do_shortcode(
-                    '[wpforms id="101"]'
-                ); ?>            
+                <?php echo do_shortcode($form_code); ?>
             </div>
         </div>
     </section>
+    <?php endif; ?>
 
 </main>
 

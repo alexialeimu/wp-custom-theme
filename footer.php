@@ -1,5 +1,6 @@
+<?php $form_code = get_theme_mod('theme_contact_us_link'); ?>
 
-    <?php if (is_front_page()): ?>
+    <?php if (is_front_page() && $form_code): ?>
          <footer class="bg-slate-800 text-slate-300 before:bg-gray-300 before:h-8 md:before:h-28 before:block">
     <?php else: ?>
          <footer class="bg-slate-800 text-slate-300 before:bg-white before:h-8 md:before:h-28 before:block">
@@ -17,10 +18,13 @@
                         $logo = wp_get_attachment_image_src(
                             $custom_logo_id
                         );
-                        ?>
+
+                        if ($logo): ?>
                             <img src=<?php echo $logo[0]; ?> class="max-h-8" alt="<?php bloginfo(
      'name'
  ); ?>"></img>
+ <?php endif;
+                        ?>
                     <?php
                     } ?>
                     <?php wp_nav_menu([
